@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b1212;
+  color: #fff;
+  color-scheme: dark;
+  height: 100svh;
+}
+
+nav {
+  padding: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h2 {
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+nav > h2 > span {
+  cursor: pointer;
+  text-decoration: underline 0.15rem rgba(255, 255, 255, 0);
+  text-underline-offset: 0.2rem;
+  transition: text-decoration-color 0.3s ease-in-out;
+}
+
+nav > h2 > span:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: underline 0.15rem rgba(255, 255, 255, 1);
+  transition: text-decoration-color 0.3s ease-in-out;
+  text-underline-offset: 0.2rem;
+  transition: background 0.6s ease-in-out, color 0.6s ease-in-out, text-decoration-color 0.4s ease-in-out;
+}
+
+nav > ul > li a:hover {
+  background-color: #fff;
+  color: #1b1212;
+  text-decoration-color: rgba(255, 255, 255, 0);
+}
