@@ -3,7 +3,8 @@ if (!session_start()) {
     session_unset();
     // Destroy the session on the browser
     setcookie(session_name(), "", time() - 3600);
-    session_destroy();
+    header("Location: index.php");
+    exit;
 }
 ?>
 
@@ -14,7 +15,7 @@ if (!session_start()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/cerrarSesion.css">
-    <title>Document</title>
+    <title>Cerrar Sesion</title>
 </head>
 
 <body>
